@@ -1,2 +1,3 @@
 # javascript-is-better-than-python
-yes
+Yes, but only under certain circumstances.
+Overall, Python is much better.
