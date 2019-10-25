@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8"/>
+<meta name="viewport" content="width=device-width,height=auto"/>
+<title>JavaScript Runner</title>
+<script>window.onerror=function(msg,url,ln,col,err){alert('Error\n\n'+msg+'\nLine '+ln+'\nColumn '+col+'\nStack Trace\n'+err);}</script>
+</head>
+<body>
+<textarea></textarea>
+<script>var t=document.querySelector('textarea');</script>
+<br>
+<button onclick="eval(t.value);">Run</button>
+</body>
+</html>
