@@ -10,4 +10,4 @@ Edit `main.js` and see the results [here](https://ayunami2000.github.io/javascri
 
 <br>
 
-For super simple JavaScript testing (logs go to the `console` tab in Inspect Element), use [this linkk](https://ayunami2000.github.io/javascript-is-better-than-python/browser/js_runner.html) and type in your script. Errors will appear as an alert box.
+For super simple JavaScript testing (logs go to the `console` tab in Inspect Element), use [this link](https://ayunami2000.github.io/javascript-is-better-than-python/browser/js_runner.html) and type in your script. Errors will appear as an alert box.
