@@ -1,8 +1,8 @@
-# Browser JavaScript
+## Browser JavaScript
 
 JavaScript that runs in the browser.
 
-## TO USE
+### TO USE
 
 Edit `main.js` and see the results [here](https://ayunami2000.github.io/javascript-is-better-than-python/browser/main). For more detailed error output, try looking at the `console` tab in Inspect Element.
 
