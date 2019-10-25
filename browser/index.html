@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>JavaScript Runner</title>
 <style>
-log,info,warn,error{all:inherit;display:block;}
+log,info,warn,error{all:inherit;display:inline-block;}
 warn{background-color:Khaki;color:Yellow;}
 error{background-color:DarkRed;color:Red;}
-log::before{content:'[LOG] ';}
-info::before{content:'[INFO] ';}
-warn::before{content:'[WARN] ';}
-error::before{content:'[ERROR] ';}
+log::before{content:'[LOG] ';display:inline;}
+info::before{content:'[INFO] ';display:inline;}
+warn::before{content:'[WARN] ';display:inline;}
+error::before{content:'[ERROR] ';display:inline;}
 </style>
 <script>
 var pre, console = (function(oldCons){
