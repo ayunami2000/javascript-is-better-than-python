@@ -20,19 +20,19 @@ var pre, console = (function(oldCons){
     return {
         log: function(text){
             oldCons.log(text);
-            pre.innerText += "<log>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</log>";
+            pre.innerHTML += "<log>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</log>";
         },
         info: function(text){
             oldCons.info(text);
-            pre.innerText += "<info>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</info>";
+            pre.innerHTML += "<info>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</info>";
         },
         warn: function(text){
             oldCons.warn(text);
-            pre.innerText += "<warn>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</warn>";
+            pre.innerHTML += "<warn>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</warn>";
         },
         error: function(text){
             oldCons.error(text);
-            pre.innerText += "<error>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</error>";
+            pre.innerHTML += "<error>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</error>";
         }
     };
 }(window.console));
