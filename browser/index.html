@@ -17,21 +17,21 @@ error::before{content:'[ERROR] ';display:inline;}
 <script>
 var pre, console = (function(oldCons){
     return {
-        log: function(text){
-            oldCons.log(text);
-            pre.innerHTML += "<log>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</log>";
+        log: function(args){
+            oldCons.log(...args);
+            pre.innerHTML += "<log>"+args[0].replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</log>";
         },
-        info: function(text){
-            oldCons.info(text);
-            pre.innerHTML += "<info>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</info>";
+        info: function(args){
+            oldCons.info(...args);
+            pre.innerHTML += "<info>"+args[0].replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</info>";
         },
-        warn: function(text){
-            oldCons.warn(text);
-            pre.innerHTML += "<warn>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</warn>";
+        warn: function(args){
+            oldCons.warn(...args);
+            pre.innerHTML += "<warn>"+args[0].replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</warn>";
         },
-        error: function(text){
-            oldCons.error(text);
-            pre.innerHTML += "<error>"+text.replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</error>";
+        error: function(args){
+            oldCons.error(...args);
+            pre.innerHTML += "<error>"+args[0].replace(/\</g,"&lt;").replace(/\>/g,"&gt;")+"</error>";
         }
     };
 }(window.console));
